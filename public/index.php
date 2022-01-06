@@ -8,9 +8,9 @@ require_once "../vendor/autoload.php";
 
 $loader = new FilesystemLoader("../templates");
 $twig = new Environment($loader, [
-    //'debug' => true,
-    //'strict_variables' => true,
-    'cache' => '../var/cache'
+    'debug' => true,
+    'strict_variables' => true,
+    //'cache' => '../var/cache'
 ]);
 
 $twig->addExtension(new DebugExtension());
